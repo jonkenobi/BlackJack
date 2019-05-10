@@ -2,13 +2,13 @@ package contents;
 
 public class AggroCPU extends CPU {
 
-	AggroCPU(Hand hand){
-		super(hand);
+	AggroCPU(Hand hand, String name){
+		super(hand,name);
 	}
 
 	@Override
 	public void speak() {
-		System.out.println("CPU:「俺は負けんぞ！」");
+		System.out.println(this.getName()+":「俺は負けんぞ！」");
 
 	}
 

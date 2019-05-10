@@ -2,12 +2,12 @@ package contents;
 
 public class ConservCPU extends CPU {
 
-	ConservCPU(Hand hand){
-		super(hand);
+	ConservCPU(Hand hand, String name){
+		super(hand,name);
 	}
 	@Override
 	public void speak() {
-		System.out.println("CPU:「この手札いいですね」");
+		System.out.println(this.getName()+":「この手札すき」");
 	}
 
 	public void ConservPlay(Deck deck){

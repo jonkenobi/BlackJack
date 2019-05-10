@@ -21,7 +21,23 @@ public class Card {
 	}
 	@Override
 	public String toString(){
-		return (this.Suit+this.Number);
+
+		switch(Number){
+		case 1:
+			return(this.Suit+"A");
+
+		case 11:
+			return(this.Suit+"J");
+
+		case 12:
+			return(this.Suit+"Q");
+
+		case 13:
+			return(this.Suit+"K");
+		default:
+			return this.Suit+this.Number;
 	}
 
+	}
 }
+
