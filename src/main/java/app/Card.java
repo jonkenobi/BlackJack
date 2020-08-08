@@ -3,7 +3,10 @@ package app;
 public class Card {
     private String Suit;
     private int Number;
-    public static String[] Suits = {"♡", "♦", "♣", "♠"};
+
+    //TODO Issues with decoding were causing symbols to not display properly here.
+    // Will fix UTF-8 encoding in future to display symbols.
+    public static String[] Suits = {"Heart", "Diamond", "Club", "Spade"};
 
     Card(String Suit, int Number) {
         this.Suit = Suit;
@@ -23,7 +26,6 @@ public class Card {
 
     @Override
     public String toString() {
-
         switch (Number) {
             case 1:
                 return (this.Suit + "A");
@@ -39,7 +41,6 @@ public class Card {
             default:
                 return this.Suit + this.Number;
         }
-
     }
 }
 

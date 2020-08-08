@@ -18,5 +18,4 @@ public abstract class CPU {
 
 	void speak() {
 	}
-
 }
